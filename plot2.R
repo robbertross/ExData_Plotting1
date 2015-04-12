@@ -17,7 +17,7 @@ consumption$Sub_metering_2 <- as.numeric(consumption$Sub_metering_2)
 consumption$Sub_metering_3 <- as.numeric(consumption$Sub_metering_3)
 
 # 2. Global active power over time
-quartz()
+quartz(bg = "white")
 plot(consumption$DateTime, consumption$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
 dev.copy(png, file = "plot2.png")
 dev.off()

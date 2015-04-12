@@ -17,7 +17,7 @@ consumption$Sub_metering_2 <- as.numeric(consumption$Sub_metering_2)
 consumption$Sub_metering_3 <- as.numeric(consumption$Sub_metering_3)
 
 # 1. Histogram of global reactive power
-quartz()
+quartz(bg = "white")
 hist(consumption$Global_active_power, col = "red", main = "Global Reactive Power", xlab = "Global Active Power (kilowatts)", ylab = "Frequency")
 dev.copy(png, file = "plot1.png")
 dev.off()

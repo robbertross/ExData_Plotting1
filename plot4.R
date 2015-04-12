@@ -19,7 +19,7 @@ consumption$Sub_metering_3 <- as.numeric(consumption$Sub_metering_3)
 # 4. Multiple graphs
 # Framework
 #dev.new(width=10, height=10)
-quartz(width=8,height=8)
+quartz(width=8,height=8,bg = "white")
 par(mfrow = c(2, 2))
 
 # Plot 1

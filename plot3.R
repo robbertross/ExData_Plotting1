@@ -17,7 +17,7 @@ consumption$Sub_metering_2 <- as.numeric(consumption$Sub_metering_2)
 consumption$Sub_metering_3 <- as.numeric(consumption$Sub_metering_3)
 
 # 3. Sub metering 1-2-3 over time
-quartz()
+quartz(bg = "white")
 plot(consumption$DateTime, consumption$Sub_metering_1, type = "l", xlab = "", ylab = "Energy sub metering")
 lines(consumption$DateTime, consumption$Sub_metering_2, col = "red")
 lines(consumption$DateTime, consumption$Sub_metering_3, col = "blue")
